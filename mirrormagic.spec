@@ -1,5 +1,6 @@
 Summary:	A game like "Deflektor" or "Mindbender"
 Summary(pl):	Gra podobna do Deflektora lub Mindbendera
+Summary(pt_BR):	Jogo de refletir raios para X, tipo "Mindbender" ou "Deflektor"
 Name:		mirrormagic
 Version:	2.0.0
 Release:	1
@@ -18,12 +19,41 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_mandir		%{_prefix}/man
 
 %description
-This is a port of a game I wrote for the Amiga in 1989. Included are
-many levels known from the games "Deflektor" and "Mindbender"
+Mirror Magic is an arcade style game for X, like "Mindbender" (Amiga)
+or "Deflektor" (Atari ST). It was first released 1989 on the Amiga.
+
+Your task is to get all the 'magic kettles' which contain 'magic spell
+ingredients', hitting them with the 'magic beam' that starts from the
+magician. The gnomes each have a mirror which can be rotated by
+clicking with the left or right mouse button, so you can reflect the
+'magic beam' to another direction. If you have gotten all the 'magic
+kettles', the 'magic door' opens and you only have to direct the
+'magic beam' to this door to end the level.
+
+To complicate the game, the following levels will contain more and
+more of some strange elements to help you in the level or to make it
+harder. Just try out what they do when you see them in a new level -
+you will quickly find it out... :)
 
 %description -l pl
 To jest port gry z Amigi z 1989 roku. Za³±czone jest wiele poziomów
 znanych z gier Deflektor i Mindbender.
+
+%description -l pt_BR
+O Mirror Magic é um jogo do estilo arcade para X, tipo o "Mindbender"
+(Amiga) ou o "Deflektor" (Atari ST). Ele foi lançado em 1989 para o
+Amiga.
+
+Sua missão é acertar todos os 'potes mágicos' que contêm 'ingredientes
+para feitiços mágicos' batendo neles com o 'raio mágico' que vem do
+mago. Cada gnomo tem um espelho que pode ser rotacionado clicando nos
+botões do mouse, para refletir o 'raio mágico' para outra direção. Se
+você acertou todos os 'potes mágicos', a 'porta mágica' se abrirá e
+basta você direcionar o 'raio mágico' a ela para finalizar o nível.
+
+Para complicar o jogo, os níveis seguintes terão mais e mais coisas
+estranhas para ajudá-lo ou atrapalhá-lo. Basta tentar usá-los assim
+que os vir, você logo descobrirá se são do bem ou do mal :)
 
 %prep
 %setup -q
