@@ -7,6 +7,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.artsoft.org/RELEASES/unix/mirrormagic/%{name}-%{version}.tar.gz
+# Source0-md5:	a1ded7fb67904c7daf63e4d8917ddf04
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-va_arg.patch
