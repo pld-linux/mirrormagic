@@ -36,8 +36,20 @@ harder. Just try out what they do when you see them in a new level -
 you will quickly find it out... :)
 
 %description -l pl
-To jest port gry z Amigi z 1989 roku. Za³±czone jest wiele poziomów
-znanych z gier Deflektor i Mindbender.
+Mirror Magic jest gr± zrêczno¶ciow± dla X, podobn± do Mindbendera
+(Amiga) lub Deflektora (Atari ST). Pierwsza wersja ukaza³a siê na
+Amigê w 1989 roku.
+
+Twoim zadaniem jest zebranie wszystkich magicznych kocio³ków, które
+zawieraj± sk³adniki zaklêcia, poprzez trafienie ich magicznym
+promieniem, który emitowany jest przez magika. Gnomy trzymaj± lustra,
+które odbijaj± promieñ w innym kierunku. Gdy zbierzesz wszystkie
+magiczne kocio³ki, otworz± siê magiczne drzwi, do których trzeba
+trafiæ promieniem by zakoñczyæ poziom.
+
+By skomplikowaæ grê, pó¼niejsze poziomy zawieraj± coraz wiêcej
+dziwnych elementów, pomagaj±cych Ci, lub przeszkadzaj±cych. Sprawd¼ co
+robi±, gdy je zobaczysz - szybko siê przekonasz... :)
 
 %description -l pt_BR
 O Mirror Magic é um jogo do estilo arcade para X, tipo o "Mindbender"
