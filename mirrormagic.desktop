@@ -7,3 +7,4 @@ Icon=mirrormagic.png
 Exec=mirrormagic
 Terminal=false
 Type=Application
+# vi: encoding=utf-8
