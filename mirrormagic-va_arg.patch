@@ -1,0 +1,128 @@
+diff -uNr mirrormagic-2.0.1.orig/src/libgame/gadgets.c mirrormagic-2.0.1/src/libgame/gadgets.c
+--- mirrormagic-2.0.1.orig/src/libgame/gadgets.c	Sun Jan 14 17:12:08 2001
++++ mirrormagic-2.0.1/src/libgame/gadgets.c	Sat Aug 10 19:01:36 2002
+@@ -279,7 +279,7 @@
+ 	{
+ 	  int max_textsize = MAX_INFO_TEXTSIZE - 1;
+ 
+-	  strncpy(gi->info_text, va_arg(ap, char *), max_textsize);
++	  strncpy(gi->info_text, (char *) va_arg(ap, int), max_textsize);
+ 	  gi->info_text[max_textsize] = '\0';
+ 	}
+ 	break;
+@@ -301,29 +301,29 @@
+ 	break;
+ 
+       case GDI_TYPE:
+-	gi->type = va_arg(ap, unsigned long);
++	gi->type = (unsigned long) va_arg(ap, int);
+ 	break;
+ 
+       case GDI_STATE:
+-	gi->state = va_arg(ap, unsigned long);
++	gi->state = (unsigned long) va_arg(ap, int);
+ 	break;
+ 
+       case GDI_CHECKED:
+-	gi->checked = va_arg(ap, boolean);
++	gi->checked = (boolean) va_arg(ap, int);
+ 	break;
+ 
+       case GDI_RADIO_NR:
+-	gi->radio_nr = va_arg(ap, unsigned long);
++	gi->radio_nr = (unsigned long) va_arg(ap, int);
+ 	break;
+ 
+       case GDI_NUMBER_VALUE:
+-	gi->text.number_value = va_arg(ap, long);
++	gi->text.number_value = (long) va_arg(ap, int);
+ 	sprintf(gi->text.value, "%d", gi->text.number_value);
+ 	gi->text.cursor_position = strlen(gi->text.value);
+ 	break;
+ 
+       case GDI_NUMBER_MIN:
+-	gi->text.number_min = va_arg(ap, long);
++	gi->text.number_min = (long) va_arg(ap, int);
+ 	if (gi->text.number_value < gi->text.number_min)
+ 	{
+ 	  gi->text.number_value = gi->text.number_min;
+@@ -332,7 +332,7 @@
+ 	break;
+ 
+       case GDI_NUMBER_MAX:
+-	gi->text.number_max = va_arg(ap, long);
++	gi->text.number_max = (long) va_arg(ap, int);
+ 	if (gi->text.number_value > gi->text.number_max)
+ 	{
+ 	  gi->text.number_value = gi->text.number_max;
+@@ -347,7 +347,7 @@
+ 	  if (gi->text.size)
+ 	    max_textsize = MIN(gi->text.size, MAX_GADGET_TEXTSIZE - 1);
+ 
+-	  strncpy(gi->text.value, va_arg(ap, char *), max_textsize);
++	  strncpy(gi->text.value, (char *) va_arg(ap, int), max_textsize);
+ 	  gi->text.value[max_textsize] = '\0';
+ 	  gi->text.cursor_position = strlen(gi->text.value);
+ 	}
+@@ -368,25 +368,25 @@
+ 	break;
+ 
+       case GDI_DESIGN_UNPRESSED:
+-	gi->design[GD_BUTTON_UNPRESSED].bitmap = va_arg(ap, Bitmap *);
++	gi->design[GD_BUTTON_UNPRESSED].bitmap = (Bitmap *) va_arg(ap, int);
+ 	gi->design[GD_BUTTON_UNPRESSED].x = va_arg(ap, int);
+ 	gi->design[GD_BUTTON_UNPRESSED].y = va_arg(ap, int);
+ 	break;
+ 
+       case GDI_DESIGN_PRESSED:
+-	gi->design[GD_BUTTON_PRESSED].bitmap = va_arg(ap, Bitmap *);
++	gi->design[GD_BUTTON_PRESSED].bitmap = (Bitmap *) va_arg(ap, int);
+ 	gi->design[GD_BUTTON_PRESSED].x = va_arg(ap, int);
+ 	gi->design[GD_BUTTON_PRESSED].y = va_arg(ap, int);
+ 	break;
+ 
+       case GDI_ALT_DESIGN_UNPRESSED:
+-	gi->alt_design[GD_BUTTON_UNPRESSED].bitmap= va_arg(ap, Bitmap *);
++	gi->alt_design[GD_BUTTON_UNPRESSED].bitmap= (Bitmap *) va_arg(ap, int);
+ 	gi->alt_design[GD_BUTTON_UNPRESSED].x = va_arg(ap, int);
+ 	gi->alt_design[GD_BUTTON_UNPRESSED].y = va_arg(ap, int);
+ 	break;
+ 
+       case GDI_ALT_DESIGN_PRESSED:
+-	gi->alt_design[GD_BUTTON_PRESSED].bitmap = va_arg(ap, Bitmap *);
++	gi->alt_design[GD_BUTTON_PRESSED].bitmap = (Bitmap *) va_arg(ap, int);
+ 	gi->alt_design[GD_BUTTON_PRESSED].x = va_arg(ap, int);
+ 	gi->alt_design[GD_BUTTON_PRESSED].y = va_arg(ap, int);
+ 	break;
+@@ -400,7 +400,7 @@
+ 	break;
+ 
+       case GDI_DECORATION_DESIGN:
+-	gi->deco.design.bitmap = va_arg(ap, Bitmap *);
++	gi->deco.design.bitmap = (Bitmap *) va_arg(ap, int);
+ 	gi->deco.design.x = va_arg(ap, int);
+ 	gi->deco.design.y = va_arg(ap, int);
+ 	break;
+@@ -421,7 +421,7 @@
+ 	break;
+ 
+       case GDI_EVENT_MASK:
+-	gi->event_mask = va_arg(ap, unsigned long);
++	gi->event_mask = (unsigned long) va_arg(ap, int);
+ 	break;
+ 
+       case GDI_AREA_SIZE:
+@@ -475,11 +475,11 @@
+ 	break;
+ 
+       case GDI_CALLBACK_INFO:
+-	gi->callback_info = va_arg(ap, gadget_function);
++	gi->callback_info = (gadget_function) va_arg(ap, int);
+ 	break;
+ 
+       case GDI_CALLBACK_ACTION:
+-	gi->callback_action = va_arg(ap, gadget_function);
++	gi->callback_action = (gadget_function) va_arg(ap, int);
+ 	break;
+ 
+       default:
