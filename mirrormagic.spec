@@ -3,7 +3,7 @@ Summary(pl):	Gra podobna do Deflektora lub Mindbendera
 Summary(pt_BR):	Jogo de refletir raios para X, tipo "Mindbender" ou "Deflektor"
 Name:		mirrormagic
 Version:	2.0.2
-Release:	2
+Release:	1
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.artsoft.org/RELEASES/unix/mirrormagic/%{name}-%{version}.tar.gz
