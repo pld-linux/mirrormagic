@@ -2,7 +2,7 @@ Summary:	A game like "Deflektor" or "Mindbender"
 Summary(pl):	Gra podobna do Deflektora lub Mindbendera
 Summary(pt_BR):	Jogo de refletir raios para X, tipo "Mindbender" ou "Deflektor"
 Name:		mirrormagic
-Version:	2.0.0
+Version:	2.0.1
 Release:	1
 License:	GPL
 Group:		X11/Applications/Games
@@ -10,7 +10,6 @@ Source0:	http://www.artsoft.org/RELEASES/unix/mirrormagic/%{name}-%{version}.tar
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 URL:		http://www.artsoft.org/mirrormagic/
-BuildRequires:	SDL-devel >= 1.1.0
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_mixer-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -86,8 +85,6 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/games/%{name},%{_pixmapsdir},%
 install %{name} $RPM_BUILD_ROOT%{_bindir}
 mv -f graphics levels music sounds $RPM_BUILD_ROOT%{_datadir}/games/%{name}
 
-gzip -9nf README CHANGES
-
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Games
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
@@ -114,7 +111,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README CHANGES
 %attr(2755,root,games) %{_bindir}/*
 %{_datadir}/games/%{name}
 %{_pixmapsdir}/*
