@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Mirror Magic
+Comment=Deflector clone
+Comment[pl]=Klon Deflektora
+Icon=mirrormagic.png
+Exec=mirrormagic
+Terminal=0
+Type=Application
