@@ -3,12 +3,13 @@ Summary(pl):	Gra podobna do Deflektora lub Mindbendera
 Summary(pt_BR):	Jogo de refletir raios para X, tipo "Mindbender" ou "Deflektor"
 Name:		mirrormagic
 Version:	2.0.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Games
 Source0:	http://www.artsoft.org/RELEASES/unix/mirrormagic/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
 Source2:	%{name}.png
+Patch0:		%{name}-va_arg.patch
 URL:		http://www.artsoft.org/mirrormagic/
 BuildRequires:	SDL_image-devel
 BuildRequires:	SDL_mixer-devel
@@ -68,6 +69,7 @@ que os vir, você logo descobrirá se são do bem ou do mal :)
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__make} \
