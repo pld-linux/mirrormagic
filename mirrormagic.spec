@@ -72,7 +72,7 @@ que os vir, você logo descobrirá se são do bem ou do mal :)
 
 %build
 %{__make} \
-	CC=%{__cc} \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} -DTARGET_SDL `sdl-config --cflags` \
 		-DSCORE_ENTRIES=MANY_PER_NAME \
 		-DRO_GAME_DIR=\\\"%{_datadir}/games/%{name}\\\" \
