@@ -91,20 +91,17 @@ install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}
 
 # scores
 install -d $RPM_BUILD_ROOT/var/games/%{name}/scores/
-for i in $RPM_BUILD_ROOT%{_datadir}/games/%{name}/levels/*
-do
-        cd $i
-        for j in `find * -type d`
-        do
-                mkdir $RPM_BUILD_ROOT/var/games/%{name}/scores/$j
-                cd $j
-                for k in `ls | grep \\\.level`
-                do
-                        touch $RPM_BUILD_ROOT/var/games/%{name}/scores/$j/`basename $k .level`.score
-                done
-                cd ..
-        done
-        cd ..
+for i in $RPM_BUILD_ROOT%{_datadir}/games/%{name}/levels/*; do
+	cd $i
+	for j in `find * -type d`; do
+		mkdir $RPM_BUILD_ROOT/var/games/%{name}/scores/$j
+		cd $j
+		for k in `ls | grep \\\.level`; do
+			touch $RPM_BUILD_ROOT/var/games/%{name}/scores/$j/`basename $k .level`.score
+		done
+		cd ..
+	done
+	cd ..
 done
 
 %clean
