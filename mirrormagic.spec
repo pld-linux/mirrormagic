@@ -1,6 +1,6 @@
 Summary:	A game like "Deflektor" or "Mindbender"
-Summary(pl):	Gra podobna do Deflektora lub Mindbendera
-Summary(pt_BR):	Jogo de refletir raios para X, tipo "Mindbender" ou "Deflektor"
+Summary(pl.UTF-8):   Gra podobna do Deflektora lub Mindbendera
+Summary(pt_BR.UTF-8):   Jogo de refletir raios para X, tipo "Mindbender" ou "Deflektor"
 Name:		mirrormagic
 Version:	2.0.2
 Release:	1
@@ -34,37 +34,37 @@ more of some strange elements to help you in the level or to make it
 harder. Just try out what they do when you see them in a new level -
 you will quickly find it out... :)
 
-%description -l pl
-Mirror Magic jest gr± zrêczno¶ciow± dla X, podobn± do Mindbendera
-(Amiga) lub Deflektora (Atari ST). Pierwsza wersja ukaza³a siê na
-Amigê w 1989 roku.
+%description -l pl.UTF-8
+Mirror Magic jest grÄ… zrÄ™cznoÅ›ciowÄ… dla X, podobnÄ… do Mindbendera
+(Amiga) lub Deflektora (Atari ST). Pierwsza wersja ukazaÅ‚a siÄ™ na
+AmigÄ™ w 1989 roku.
 
-Twoim zadaniem jest zebranie wszystkich magicznych kocio³ków, które
-zawieraj± sk³adniki zaklêcia, poprzez trafienie ich magicznym
-promieniem, który emitowany jest przez magika. Gnomy trzymaj± lustra,
-które odbijaj± promieñ w innym kierunku. Gdy zbierzesz wszystkie
-magiczne kocio³ki, otworz± siê magiczne drzwi, do których trzeba
-trafiæ promieniem by zakoñczyæ poziom.
+Twoim zadaniem jest zebranie wszystkich magicznych kocioÅ‚kÃ³w, ktÃ³re
+zawierajÄ… skÅ‚adniki zaklÄ™cia, poprzez trafienie ich magicznym
+promieniem, ktÃ³ry emitowany jest przez magika. Gnomy trzymajÄ… lustra,
+ktÃ³re odbijajÄ… promieÅ„ w innym kierunku. Gdy zbierzesz wszystkie
+magiczne kocioÅ‚ki, otworzÄ… siÄ™ magiczne drzwi, do ktÃ³rych trzeba
+trafiÄ‡ promieniem by zakoÅ„czyÄ‡ poziom.
 
-By skomplikowaæ grê, pó¼niejsze poziomy zawieraj± coraz wiêcej
-dziwnych elementów, pomagaj±cych Ci, lub przeszkadzaj±cych. Sprawd¼ co
-robi±, gdy je zobaczysz - szybko siê przekonasz... :)
+By skomplikowaÄ‡ grÄ™, pÃ³Åºniejsze poziomy zawierajÄ… coraz wiÄ™cej
+dziwnych elementÃ³w, pomagajÄ…cych Ci, lub przeszkadzajÄ…cych. SprawdÅº co
+robiÄ…, gdy je zobaczysz - szybko siÄ™ przekonasz... :)
 
-%description -l pt_BR
-O Mirror Magic é um jogo do estilo arcade para X, tipo o "Mindbender"
-(Amiga) ou o "Deflektor" (Atari ST). Ele foi lançado em 1989 para o
+%description -l pt_BR.UTF-8
+O Mirror Magic Ã© um jogo do estilo arcade para X, tipo o "Mindbender"
+(Amiga) ou o "Deflektor" (Atari ST). Ele foi lanÃ§ado em 1989 para o
 Amiga.
 
-Sua missão é acertar todos os 'potes mágicos' que contêm 'ingredientes
-para feitiços mágicos' batendo neles com o 'raio mágico' que vem do
+Sua missÃ£o Ã© acertar todos os 'potes mÃ¡gicos' que contÃªm 'ingredientes
+para feitiÃ§os mÃ¡gicos' batendo neles com o 'raio mÃ¡gico' que vem do
 mago. Cada gnomo tem um espelho que pode ser rotacionado clicando nos
-botões do mouse, para refletir o 'raio mágico' para outra direção. Se
-você acertou todos os 'potes mágicos', a 'porta mágica' se abrirá e
-basta você direcionar o 'raio mágico' a ela para finalizar o nível.
+botÃµes do mouse, para refletir o 'raio mÃ¡gico' para outra direÃ§Ã£o. Se
+vocÃª acertou todos os 'potes mÃ¡gicos', a 'porta mÃ¡gica' se abrirÃ¡ e
+basta vocÃª direcionar o 'raio mÃ¡gico' a ela para finalizar o nÃ­vel.
 
-Para complicar o jogo, os níveis seguintes terão mais e mais coisas
-estranhas para ajudá-lo ou atrapalhá-lo. Basta tentar usá-los assim
-que os vir, você logo descobrirá se são do bem ou do mal :)
+Para complicar o jogo, os nÃ­veis seguintes terÃ£o mais e mais coisas
+estranhas para ajudÃ¡-lo ou atrapalhÃ¡-lo. Basta tentar usÃ¡-los assim
+que os vir, vocÃª logo descobrirÃ¡ se sÃ£o do bem ou do mal :)
 
 %prep
 %setup -q
