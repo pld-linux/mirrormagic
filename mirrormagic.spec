@@ -1,6 +1,6 @@
 Summary:	A game like "Deflektor" or "Mindbender"
-Summary(pl.UTF-8):   Gra podobna do Deflektora lub Mindbendera
-Summary(pt_BR.UTF-8):   Jogo de refletir raios para X, tipo "Mindbender" ou "Deflektor"
+Summary(pl.UTF-8):	Gra podobna do Deflektora lub Mindbendera
+Summary(pt_BR.UTF-8):	Jogo de refletir raios para X, tipo "Mindbender" ou "Deflektor"
 Name:		mirrormagic
 Version:	2.0.2
 Release:	1
