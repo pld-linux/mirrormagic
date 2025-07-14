@@ -68,7 +68,7 @@ que os vir, você logo descobrirá se são do bem ou do mal :)
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__make} \
